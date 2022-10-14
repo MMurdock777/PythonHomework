@@ -8,8 +8,7 @@ print("Input m")
 m = float(input())
 print("Input n")
 n = float(input())
-solution = -(b)/a
-answer = m<=solution<=n
+solution = - b / a
+answer = m <= solution <= n
 print("Solution:", solution)
-print (f"m<={solution}<=n = {answer}")
-
+print(f"m<={solution}<=n = {answer}")

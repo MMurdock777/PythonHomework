@@ -4,7 +4,7 @@ print("Input second number:")
 num2 = int(input())
 print("Input third number:")
 num3 = int(input())
-nummin= min(num1,num2,num3)
-nummax = max(num1,num2,num3)
-nummid = num1+num2+num3-nummin-nummax
+nummin = min(num1, num2, num3)
+nummax = max(num1, num2, num3)
+nummid = num1 + num2 + num3 - nummin - nummax
 print(f"Sorted numbers: {nummin}, {nummid}, {nummax}")

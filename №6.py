@@ -11,3 +11,6 @@ if distance == 123:
     distance = 0
 
 print("Stopped on kilometer #:", round(distance))
+
+
+# TODO здесь надо было с помощью остатков от деления находить остаток круга
