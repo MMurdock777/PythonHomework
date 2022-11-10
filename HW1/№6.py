@@ -10,4 +10,3 @@ kilometer = distance % 123
 print(f"Ran {laps} laps and stopped on kilometer {kilometer}")
 
 
-# TODO здесь надо было с помощью остатков от деления находить остаток круга
