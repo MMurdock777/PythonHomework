@@ -1,4 +1,4 @@
-team_name = input("Введите название команды:")
+team_name = input("Введите название команды: ")
 print(f"{team_name} - чемпион!")
 print("-" * len(team_name))
 print(f"{team_name.lower()} - чемпион!")
