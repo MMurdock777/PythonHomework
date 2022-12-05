@@ -1,7 +1,7 @@
 guests = ['Петя', 'Ваня', 'Саша', 'Лиза', 'Катя']
 
 flag = 0
-while  flag == 0:
+while flag == 0:
     print(f"Сейчас на вечеринке {len(guests)} человек: {guests}")
     status = input("Гость пришёл или ушёл? ")
     if status == "пришел":

@@ -17,11 +17,8 @@ while i < len(num_list) - 1:
         i += 1
 
 print(f"Нужно приписать чисел: {len(num_list) - insert_spot}")
-list_added= []
+list_added = []
 for i in range(insert_spot, len(num_list)):
     list_added.append(num_list[i])
 
 print(f"Сами числа: {list_added}")
-
-
-

@@ -19,4 +19,3 @@ while len(person_list) > 1:
     person_list.pop(leave)
 
 print(f"Остался человек под номером: {person_list[0]}")
-
