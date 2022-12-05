@@ -21,5 +21,3 @@ for i in range(0, friend_num):
             friend_balance += debt_list[j+2]
     print(f"{i + 1}: {friend_balance}")
     friend_balance = 0
-
-

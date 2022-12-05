@@ -12,4 +12,3 @@ for i in shop:
 
 print("Кол-во деталей —", num)
 print("Общая стоимость", sum)
-
