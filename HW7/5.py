@@ -42,6 +42,6 @@ while i:
                 print(answer)
         else:
             raise OperationError
-    except OperationError and ValueError and ZeroDivisionError:
+    except OperationError and ValueError and ZeroDivisionError and IndexError:
         print("Выражение введено неверно. Введите исправленное выражение.")
         continue
