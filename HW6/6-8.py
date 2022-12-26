@@ -17,7 +17,7 @@ class Point:
         return self.__y
 
 
-class Rectangle(Point):
+class Rectangle():
 
     def __init__(
             self,
