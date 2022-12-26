@@ -1,22 +1,21 @@
 class File(object):
-    try:
 
-        def __init__(self, file_name, method):
-            if method == "r":
-                try:
-                    self.file_obj = open(file_name, method)
-                except IOError and FileNotFoundError:
-                    self.file_obj = open(file_name, "w")
-            else:
-                self.file_obj = open(file_name, method)
+    def __init__(self, file_name: str, method: str):
+        self.file_name = file_name
+        self.method = method
 
-        def __enter__(self):
-            return self.file_obj
+    def __enter__(self):
+        try:
+            self.file_obj = open(self.file_name, self.method)
+        except IOError or FileNotFoundError:
+            self.file_obj = open(self.file_name, "w")
+        return self.file_obj
 
-        def __exit__(self, type, value, traceback):
+    def __exit__(self, exception_type, exception_value, traceback):
+        if exception_type is IOError or FileNotFoundError:
             self.file_obj.close()
-    except Exception as err:
-        pass
+            return True
+        self.file_obj.close()
 
 
 with File("nonexistantfile.txt", "r") as fr:
