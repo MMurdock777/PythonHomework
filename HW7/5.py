@@ -7,17 +7,17 @@ def calculator(num1, operator: str, num2):
     try:
         if operator == "+":
             return num1+num2
-        if operator == "-":
+        elif operator == "-":
             return num1 - num2
-        if operator == "*":
+        elif operator == "*":
             return num1 * num2
-        if operator == "/":
+        elif operator == "/":
             return num1 / num2
-        if operator == "//":
+        elif operator == "//":
             return num1 // num2
-        if operator == "%":
+        elif operator == "%":
             return num1 % num2
-        if operator == "^":
+        elif operator == "^":
             return num1 ** num2
     except ZeroDivisionError:
         print("Деление на 0 не возможно. Введите исправленное выржение")
